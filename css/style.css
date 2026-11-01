@@ -150,6 +150,14 @@ body.theme-dark .site-header {
   margin-right: 0.65rem;
 }
 
+.brand-photo {
+  display: none;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 0.7rem;
+  object-fit: cover;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -330,31 +338,8 @@ body.theme-dark .site-header {
   height: 82%;
   margin-bottom: 1.5rem;
   border-radius: 1.5rem 1.5rem 0 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(244, 246, 248, 0.92));
+  object-fit: cover;
   border: 8px solid rgba(255, 255, 255, 0.42);
-  display: flex;
-  align-items: end;
-  justify-content: center;
-}
-
-.photo-placeholder::before {
-  content: "";
-  width: 62%;
-  height: 34%;
-  background: linear-gradient(180deg, #e2e8f0, #cbd5e1);
-  border-radius: 50% 50% 30% 30%;
-  margin-top: auto;
-}
-
-.photo-placeholder::after {
-  content: "";
-  position: absolute;
-  width: 44%;
-  height: 48%;
-  bottom: 12%;
-  background: linear-gradient(180deg, #dfe5ec, #c3cedb);
-  border-radius: 45% 45% 15% 15%;
-  box-shadow: inset 0 0 0 8px rgba(20, 33, 61, 0.08);
 }
 
 .shape-square,
@@ -1116,12 +1101,19 @@ textarea {
 
 @media (max-width: 768px) {
   .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
     font-size: 0;
   }
 
   .brand-mark {
     margin-right: 0;
     font-size: 1rem;
+  }
+
+  .brand-photo {
+    display: inline-flex;
   }
 
   .nav-toggle {

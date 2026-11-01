@@ -691,6 +691,13 @@ body.theme-dark .site-header {
   align-items: start;
 }
 
+.planner-page-header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
 .dashboard-card,
 .task-card,
 .form-panel {
@@ -927,6 +934,10 @@ textarea {
   margin: 0;
 }
 
+.quick-link-icon {
+  display: none;
+}
+
 .footer-links li {
   padding: 0.1rem 0;
 }
@@ -1104,8 +1115,22 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .brand {
+    font-size: 0;
+  }
+
+  .brand-mark {
+    margin-right: 0;
+    font-size: 1rem;
+  }
+
   .nav-toggle {
     display: inline-flex;
+  }
+
+  .nav-actions {
+    width: auto;
+    margin-left: auto;
   }
 
   .nav-links {
@@ -1156,10 +1181,19 @@ textarea {
     padding: 4rem 0;
   }
 
+  .planner-page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .planner-page-header .btn {
+    width: calc(100% - 2.625rem);
+    margin-inline: auto;
+  }
+
   .hero-actions,
   .filter-bar,
-  .task-actions,
-  .nav-actions {
+  .task-actions {
     width: 100%;
   }
 
@@ -1175,9 +1209,82 @@ textarea {
     padding: 3rem 0 1.5rem;
   }
 
-  .scroll-edge-button {
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .footer-links li {
+    padding: 0;
+  }
+
+  .quick-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 2.75rem;
     height: 2.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .quick-link:hover,
+  .quick-link:focus-visible {
+    background: rgba(0, 166, 166, 0.25);
+    transform: translateY(-2px);
+  }
+
+  .quick-link-label {
+    position: absolute;
+    z-index: 1;
+    bottom: calc(100% + 0.5rem);
+    left: 50%;
+    padding: 0.35rem 0.55rem;
+    border-radius: 0.35rem;
+    background: var(--white);
+    color: var(--navy);
+    box-shadow: var(--shadow-soft);
+    font-size: 0.75rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translate(-50%, 0.25rem);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  }
+
+  .quick-link:hover .quick-link-label,
+  .quick-link:focus-visible .quick-link-label {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+
+  .quick-link-icon {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+  }
+
+  .scroll-edge-button {
+    bottom: max(1.5rem, calc(env(safe-area-inset-bottom) + 0.5rem));
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .scroll-edge-button svg {
+    width: 1.65rem;
+    height: 1.65rem;
   }
 }
 

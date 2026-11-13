@@ -450,6 +450,16 @@ body.theme-dark .site-header {
   margin-bottom: 1rem;
 }
 
+.icon-badge svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .skill-grid,
 .project-grid,
 .highlights-grid,
@@ -653,13 +663,26 @@ body.theme-dark .site-header {
 }
 
 .skill-group {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.preview-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.preview-card-header h3 {
+  margin: 0;
 }
 
 .skill-tag {
   display: inline-flex;
   align-items: center;
+  gap: 0.4rem;
   justify-content: center;
   padding: 0.5rem 0.8rem;
   background: rgba(20, 33, 61, 0.04);
@@ -667,7 +690,45 @@ body.theme-dark .site-header {
   border-radius: 999px;
   color: var(--navy);
   font-weight: 600;
+  line-height: 1.2;
 }
+
+.skill-tag svg {
+  width: 0.8rem;
+  height: 0.8rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+.grid-2 > article:nth-of-type(1) .skill-tag:nth-child(1) svg { color: #555555; }
+.grid-2 > article:nth-of-type(1) .skill-tag:nth-child(2) svg { color: #00599c; }
+.grid-2 > article:nth-of-type(1) .skill-tag:nth-child(3) svg { color: #3776ab; }
+.grid-2 > article:nth-of-type(1) .skill-tag:nth-child(4) svg { color: #e34f26; }
+.grid-2 > article:nth-of-type(1) .skill-tag:nth-child(5) svg { color: #1572b6; }
+.grid-2 > article:nth-of-type(1) .skill-tag:nth-child(6) svg { color: #9a7b00; }
+
+.grid-2 > article:nth-of-type(2) .skill-tag:nth-child(1) svg { color: #52606d; }
+.grid-2 > article:nth-of-type(2) .skill-tag:nth-child(2) svg { color: #4479a1; }
+.grid-2 > article:nth-of-type(2) .skill-tag:nth-child(3) svg { color: #217346; }
+.grid-2 > article:nth-of-type(2) .skill-tag:nth-child(4) svg { color: #b88a00; }
+.grid-2 > article:nth-of-type(2) .skill-tag:nth-child(5) svg { color: #1f4e79; }
+.grid-2 > article:nth-of-type(2) .skill-tag:nth-child(6) svg { color: #ff3621; }
+.grid-2 > article:nth-of-type(2) .skill-tag:nth-child(7) svg { color: #e25a1c; }
+.grid-2 > article:nth-of-type(2) .skill-tag:nth-child(8) svg { color: #008c95; }
+.grid-2 > article:nth-of-type(2) .skill-tag:nth-child(9) svg { color: #150458; }
+.grid-2 > article:nth-of-type(2) .skill-tag:nth-child(10) svg { color: #673ab7; }
+.grid-2 > article:nth-of-type(2) .skill-tag:nth-child(11) svg { color: #7e57c2; }
+
+.grid-2 > article:nth-of-type(3) .skill-tag:nth-child(1) svg { color: #326ce5; }
+.grid-2 > article:nth-of-type(3) .skill-tag:nth-child(2) svg { color: #b96c00; }
+.grid-2 > article:nth-of-type(3) .skill-tag:nth-child(3) svg { color: #0078d4; }
+
+.grid-2 > article:nth-of-type(4) .skill-tag:nth-child(1) svg { color: #f05032; }
+.grid-2 > article:nth-of-type(4) .skill-tag:nth-child(2) svg { color: #24292f; }
 
 .planner-shell {
   display: grid;

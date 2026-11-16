@@ -800,3 +800,46 @@ Most importantly, design all five pages using the same global design system, the
 The final result must be visually polished, functionally reliable, easy to maintain, accessible, responsive, and suitable for university academic assessment and long-term professional use.
 Do not stop at the design stage. Complete both the UI/UX design and the actual five-page website implementation.
 
+
+
+
+
+Act as a senior UI/UX designer and frontend web developer. Build a clean, minimalist, single-page personal portfolio website for a Data Analyst and Data Scientist based in Jos, Nigeria. Model the layout, tone, and structure closely after Harrison Jansma’s portfolio: approachable, uncluttered, personality-driven, and focused on quick navigation rather than lengthy on-page case studies
+
+Page Structure & Sections:
+
+Hero Section (Top Fold):
+
+Visual: A prominent, friendly circular or rounded-square portrait photo on the left or center.
+
+Headline & Hook: My name ([Insert Your Name]), followed by a bold, two-sentence value proposition inspired by Harrison's style—e.g., "Data Analyst & Data Scientist based in Jos, Nigeria. Turning messy datasets into clear business decisions and automated workflows."
+
+Quick Social Links: Minimalist icon links to GitHub, LinkedIn, Medium/Substack, and Email.
+
+Core Focus & Interest Areas:
+
+A clean 3-to-4 column grid using custom minimalist icons or fun graphics to highlight my key strengths: Data Analysis & BI, Machine Learning & Predictive Modeling, Workflow Automation, and Data Storytelling.
+
+Exemplar Projects (Featured Work):
+
+Display only my top 3 exemplar projects in clean cards so visitors aren't overwhelmed, with a subtle "View all projects on GitHub →" button underneath.
+
+Each card should have a punchy title, a 2-sentence summary of the problem solved, tech stack tags (e.g., Python, SQL, Power BI/Tableau), and a direct external link to the GitHub repo, live dashboard, or article (no heavy internal case-study pages).
+
+Project 1: [Insert Project Title & 1-line summary]
+
+Project 2: [Insert Project Title & 1-line summary]
+
+Project 3: [Insert Project Title & 1-line summary]
+
+Humanizing "About / Off the Clock" Section:
+
+Keep it brief and authentic to balance technical rigor with personality. Include 2–3 sentences about my background in Nigeria's tech ecosystem and a fun personal detail or hobby photo (e.g., [Insert a personal interest, pet, hiking around Plateau State, or favorite side hobby]).
+
+Design & Technical Guidelines:
+
+Aesthetic: Modern, airy, high-whitespace design with a light background (#FAFAFA), dark slate typography (#1E293B), and one warm, confident accent color (e.g., deep teal or emerald).
+
+Typography: Clean sans-serif pairing (e.g., Inter or Plus Jakarta Sans for headings, DM Sans for body text).
+
+Code Output: Provide responsive, semantic HTML5 and Tailwind CSS (or clean React/Next.js) in a single, well-commented file ready for deployment on GitHub Pages or Vercel.
